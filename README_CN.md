@@ -1,6 +1,6 @@
-# AI Benchmark - LLM 模型评测系统
+# EmoSupportBench - LLM 模型评测系统
 
-[English](./README_EN.md) | 中文
+[English](./README.md) | 中文
 
 一个专业的大语言模型 (LLM) 评测与评分系统，基于 Next.js 16、TypeScript、Tailwind CSS 和 SQLite 构建。支持批量推理、多维度专家评分、竞技场对战等功能，帮助研究者系统化地评估和比较不同 LLM 模型的表现。
 
