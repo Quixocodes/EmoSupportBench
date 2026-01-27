@@ -1,6 +1,6 @@
-# AI Benchmark - LLM Model Evaluation System
+# EmoSupportBench - LLM Model Evaluation System
 
-English | [中文](./README.md)
+English | [中文](./README_CN.md)
 
 A professional Large Language Model (LLM) evaluation and scoring system built with Next.js 16, TypeScript, Tailwind CSS, and SQLite. Features batch inference, multi-dimensional expert scoring, arena battles, and more — designed to help researchers systematically evaluate and compare LLM performance.
 
@@ -644,3 +644,4 @@ npm start
 ## License
 
 [ISC](LICENSE)
+
