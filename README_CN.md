@@ -1,8 +1,32 @@
-# EmoSupportBench - LLM 模型评测系统
+# EmoSupportBench
+
+**EmoSupportBench: 基于心理学理论的LLM情感支持能力基准测试与自动化评分工具**
 
 [English](./README.md) | 中文
 
-一个专业的大语言模型 (LLM) 评测与评分系统，基于 Next.js 16、TypeScript、Tailwind CSS 和 SQLite 构建。支持批量推理、多维度专家评分、竞技场对战等功能，帮助研究者系统化地评估和比较不同 LLM 模型的表现。
+## 简介
+
+EmoSupportBench 是一个综合性的基准测试和自动化评分工具，用于评估大语言模型 (LLM) 的情感支持能力。它通过以下三个组件将心理学理论与计算基准测试相结合：
+
+1. **层次化能力框架**，定义了跨三个层次的14个可测量维度：
+   - **态度层** (4个维度)：好奇、无条件积极关注、助人、保护
+   - **感知品质层** (3个维度)：温暖、情绪敏感性、情绪稳定性
+   - **技能层** (7个维度)：提问、共情、解释、安抚、正常化、鼓励、建议
+
+2. **分层200题评估集**，从8,188条匿名化的真实求助问题中提炼而成，涵盖8个一级领域和157个二级情境，包含五个情绪强度等级。
+
+3. **行为锚定评分量表 (BARS)** 及多智能体自动化评分工具，通过多角色协商策略实现与专家判断的高度一致 (ICC = 0.735)。
+
+### 资源链接
+
+- **数据集**：[HuggingFace - YueyangWang/EmoSupportBench](https://huggingface.co/datasets/YueyangWang/EmoSupportBench)
+- **论文**：KDD 2026 Datasets and Benchmarks Track (Submission #158)
+
+---
+
+## 自动化评分工具
+
+本仓库为自动化评分工具——一个专业的LLM评测与评分系统，基于 Next.js 16、TypeScript、Tailwind CSS 和 SQLite 构建。实现了论文中描述的多智能体协商评分流程，支持批量推理、多维度专家评分和竞技场式交叉评审。
 
 ---
 

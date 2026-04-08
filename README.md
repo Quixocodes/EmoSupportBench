@@ -1,8 +1,43 @@
-# EmoSupportBench - LLM Model Evaluation System
+# EmoSupportBench
+
+**EmoSupportBench: Benchmarking Emotional Support in LLMs with a Psychologically Grounded Rubric, Dataset, and Automated Scoring Toolkit**
 
 English | [中文](./README_CN.md)
 
-A professional Large Language Model (LLM) evaluation and scoring system built with Next.js 16, TypeScript, Tailwind CSS, and SQLite. Features batch inference, multi-dimensional expert scoring, arena battles, and more — designed to help researchers systematically evaluate and compare LLM performance.
+## About
+
+EmoSupportBench is a comprehensive benchmark and automated scoring toolkit for evaluating emotional support capabilities in Large Language Models (LLMs). It bridges psychological theory with computational benchmarking through three components:
+
+1. **A hierarchical capability framework** defining 14 measurable dimensions across three layers:
+   - **Attitudes** (4 dims): Curiosity, Unconditional Positive Regard, Helpfulness, Protectiveness
+   - **Perceived Qualities** (3 dims): Warmth, Emotional Sensitivity, Emotional Stability
+   - **Skills** (7 dims): Questioning, Empathy, Explanation, Comforting, Normalization, Encouragement, Suggestion
+
+2. **A stratified 200-item evaluation set** distilled from 8,188 anonymized, real-world help-seeking queries, covering 8 top-level domains and 157 second-level scenarios with five emotional intensity levels.
+
+3. **A Behaviorally Anchored Rating Scale (BARS)** rubric with a multi-agent automated scoring toolkit that achieves ICC = 0.735 alignment with expert judgments via a multi-role deliberation strategy.
+
+### Resources
+
+- **Dataset**: [HuggingFace - YueyangWang/EmoSupportBench](https://huggingface.co/datasets/YueyangWang/EmoSupportBench)
+- **Paper**: KDD 2026 Datasets and Benchmarks Track (Submission #158)
+
+### Citation
+
+```bibtex
+@inproceedings{wang2026emosupportbench,
+  title={EmoSupportBench: Benchmarking Emotional Support in LLMs with a Psychologically Grounded Rubric, Dataset, and Automated Scoring Toolkit},
+  author={Wang, Yueyang and Xiong, Xinyan and Liu, Jinjie and Zhao, Chengyi and Hou, Wenxin and Hou, Jin and Tao, Shimin and Wei, Daimeng and He, Haiqiang and Liu, Chenxin and Liu, Yilun and Jiang, Ting},
+  booktitle={Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  year={2026}
+}
+```
+
+---
+
+## Automated Scoring Toolkit
+
+This repository hosts the automated scoring toolkit — a professional LLM evaluation system built with Next.js 16, TypeScript, Tailwind CSS, and SQLite. It implements the multi-agent deliberation pipeline described in the paper, supporting batch inference, multi-dimensional expert scoring, and arena-style peer review.
 
 ---
 
